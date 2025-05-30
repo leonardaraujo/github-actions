@@ -1,0 +1,15 @@
+name: "Hola mundo"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hola mundo desde GitHub Actions!"
+          - run: echo "Correr migraciones" 
+          - run: echo "Generar binario" 
+          - run: echo "Publicar version"  
+     
